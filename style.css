@@ -1,0 +1,1201 @@
+body{
+	font-family:"Artifika";
+}
+
+.hidden{display:none !important;}
+
+.theBoxes{
+	top: 41px;
+	left: 85px;
+	width:250px;
+	height:360px;
+	background-image: url(././images/TheBoxes.png);
+	display:inline;
+	position:fixed;
+	z-index:10;
+}
+
+#clickMe{
+	background-color: transparent;
+	width:600px;
+	height:375px;
+	z-index: 2;
+	}
+
+#outerBox{
+	text-align:center;
+	background-image: url(././images/OuterBox.png);
+	width:600px;
+	height:400px;
+	position:fixed;
+}
+
+#leftColumn{
+	background-image: url(././images/LeftColumn.png);
+	margin:2.5px 10px 0px 2.5px;
+	width:75px;
+	height:360px;
+	position:absolute;
+}
+
+#upgrades{
+	background-image: url(././images/UpgradesIcon.png); 
+	height: 65px;
+	margin: 5px;
+}
+#upgrades:hover{
+	background-image: url(././images/UpgradesIconSelected.png);
+	height: 65px;
+	margin: 5px;
+}
+#upgrades.clicked{
+	background-image: url(././images/UpgradesIconSelected.png);
+	height: 65px;
+	margin: 5px;
+}
+
+#deeds{
+	background-image: url(././images/DeedsIcon.png);
+	height:65px;
+	margin: 5px;
+}
+#deeds:hover{
+	height:65px;
+	background-image: url(././images/DeedsIconSelected.png);
+	margin: 5px;
+}
+#deeds.clicked{
+	height:65px;
+	background-image: url(././images/DeedsIconSelected.png);
+	margin: 5px;	
+}
+
+#talents{
+	background-image: url(././images/DeedsIcon.png);
+	height:65px;
+	margin: 5px;
+}
+#talents:hover{
+	height:65px;
+	background-image: url(././images/DeedsIconSelected.png);
+	margin: 5px;
+}
+#talents.clicked{
+	height:65px;
+	background-image: url(././images/DeedsIconSelected.png);
+	margin: 5px;	
+}
+
+#feats{
+	height:65px;
+	background-image: url(././images/FeatsIcon.png);
+	margin: 5px;
+}
+#feats:hover{
+	height:65px;
+	background-image: url(././images/FeatsIconSelected.png);
+	margin: 5px;
+}
+#feats.clicked{
+	height:65px;
+	background-image: url(././images/FeatsIconSelected.png);
+	margin: 5px;	
+}
+
+#stats{
+	height:65px;
+	background-image: url(././images/StatsIcon.png);
+	margin: 5px;
+}
+#stats:hover{
+	height:65px;
+	background-image: url(././images/StatsIconSelected.png);
+	margin: 5px;
+}
+#stats.clicked{
+	height:65px;
+	background-image: url(././images/StatsIconSelected.png);
+	margin: 5px;	
+}
+
+#topSlip{
+	background-image: url(././images/TopSlip.png);
+	height:30px;
+	width:600px;
+}
+
+#moneyCount{
+	margin-left:8px;
+	margin-top:3px;
+	background-image: url(././images/Coin.png);
+	width:25px;
+	height:25px;
+	position:fixed;
+}
+
+#clickDamage{
+	display:inline-block;
+	margin-left: 8px;
+	margin-top: 3px;
+	background-image: url(././images/clickIcon.png);
+	left:150px;
+	width:25px;
+	height:25px;
+	position:fixed;
+}
+
+#helperProduction{
+	display:inline-block;
+	margin-left: 8px;
+	margin-top: 4px;
+	background-image: url(././images/hProdIcon.png);
+	left:225px;
+	width:25px;
+	height:25px;
+	position:fixed;
+}
+
+#gold{
+	position: relative;
+	z-index: 125;
+	display:inline-block;
+	margin-top:3px;
+	margin-left:30px;
+}
+
+#damage{
+	position: relative;
+	z-index: 100;
+	display:inline-block;
+	margin-top:3px;
+	margin-left:30px;	
+}
+
+#production{
+	position: relative;
+	z-index: 100;
+	display:inline-block;
+	margin-top:2px;
+	margin-left:25px;	
+}
+
+
+.upgrade{
+	width:50px;
+	height:50px;
+	margin: 2px 5px 2px 5px;
+	display:inline-block;
+	font-size:10px;
+	float:left;
+	z-index:5;
+	position:relative;
+}
+
+.unlocked{}
+.locked{
+	display:none;
+}
+
+.boxTitle{
+	background-color:darkgrey;
+	border-style:outset;
+}
+
+#availableUpgrades{
+	width:244px;
+	margin-top:3px;
+	margin-left:3px;
+	position:center;
+}
+
+#boughtUpgrades{
+	width:235px;
+	position:relative;
+	display:inline-block;
+}
+
+#boughtUpgradesWrapper{
+	z-index:50;
+	width:240px;
+	overflow-x:hidden;
+	margin:0px 5px 0px 5px;
+	background:rgba(0,0,0,0);
+	position:absolute;
+}
+
+#mouseoverDiv{
+	position:absolute;
+	z-index:100 !important;
+	width:200px;
+	text-align:left;
+	background-image:url(././images/mouseoverDescBackground.png);
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: center center;
+	padding-left:10px;
+	padding-right:10px;
+	outline:5px ridge silver;
+}
+
+#pickClassBox{
+	min-height:1px;
+	background-color:silver;
+	width:180px;
+	position:absolute;
+	left:210px;
+	top:100px;
+	z-index:50 !important;
+}
+
+#mouseoverName{
+	font-size: 15px;
+	margin-top:5px;
+}
+#mouseoverCost{
+	font-size: 10px;
+	margin-top:-15px;
+}
+#mouseoverDesc{
+	font-size:12px;
+}
+
+#mouseoverDuration{
+	font-size: 10px;
+	margin-top: -10px;
+}
+
+#popupBox{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:rgba(0,0,0,0.8);
+	z-index:50;
+}
+
+#pickClassTitle{
+	text-align: center;
+	background-color: darkgrey;
+	border:inset;
+	font-size:13px;
+	margin-bottom: 5px;
+}
+
+#statsBox{
+	font-size:12px;
+}
+
+#statTable{
+	position:absolute;
+	left:7px;
+	top:32px;
+}
+
+#statsBoxTitle{
+	background-color:darkgrey;
+	border-style:outset;
+	margin:3px;
+	font-size:15px;
+	height:20px;
+}
+
+#statsB{
+	width:175px;
+	text-align: left;
+	background:rgba(255,255,255,0.3);
+}
+#valuesBox{
+	width:50px;
+	background:rgba(255,255,255,0.3);
+	text-align: right;
+	position:absolute;
+}
+
+#pickClassBox{
+	background-image:url(././images/pickClassBoxBackground.png);
+	background-size:cover;
+}
+
+#spellBox{
+	padding:3px;
+	position:absolute;
+	margin-top:3px;
+	width:169px;
+	height:315px;
+	background-image:url(././images/spellBoxBackground.png);
+	left:420px;
+	display:inline;
+}
+
+#resourceRegen{
+	position:relative;
+	width:161;
+	height:30px;
+	margin:4px;
+	border: ridge silver;
+
+}
+
+#manaNumbers{
+	position:absolute;
+	width:155px;
+	height:30px;
+	z-index:11;
+	margin-top:7px;
+	font-size:12px;
+}
+
+#currentMana{
+	max-width:155px;
+	height:30px;
+	position:absolute;
+	background:rgba(200,200,200,0.6);
+	z-index:10;
+}
+
+.spells{
+	position:relative;
+	width:151px;
+	background-image:url(././images/spellBackground.png);
+	left:9px;
+	height:30px;
+}
+
+#spellIcon{
+	margin-left:5px;
+	display:inline-block;
+	float:left;
+	height:30px;
+	width:30px;
+}
+
+#spellTitle{
+	height:20px;
+	font-size:14px;
+	font-style:bold;
+}
+#spellCost{
+	margin-top:-18px;
+	height:10px;
+	font-size:10px;
+}
+
+.agilityActivated{
+	background-image:url(././images/agilitySpellBackground.png);
+}
+.meleeActivated{
+	background-image:url(././images/meleeSpellBackground.png);
+}
+.sorceryActivated{
+	background-image:url(././images/sorcerySpellBackground.png);
+}
+
+#bottomColumn{
+	max-width:175px;
+	height:40px;
+	position: absolute;
+	z-index:10;
+	top:353px;
+	left:430px;
+	padding-top:0px;
+}
+
+.tab{
+	width:35px;
+	height:35px;
+	display:inline-block;
+	z-index:11;
+}
+
+#spellTab{
+	background-image:url(././images/spellTabIcon.png);
+}
+
+#spellTab:hover{
+	background-image:url(././images/spellTabIconHover.png);
+}
+
+#helperTab{
+	background-image:url(././images/helperTabIcon.png);
+}
+
+#helperTab:hover{
+	background-image:url(././images/helperTabIconHover.png);
+}
+
+#guildTab{
+	background-image:url(././images/guildTabIcon.png);
+}
+
+#guildTab:hover{
+	background-image:url(././images/guildTabIconHover.png);
+}
+
+#questTab{
+	background-image:url(././images/questTabIcon.png);
+}
+
+#questTab:hover{
+	background-image:url(././images/questTabIconHover.png);
+}
+
+#helperBox{
+	padding:3px;
+	position:absolute;
+	margin-top:3px;
+	width:169px;
+	height:315px;
+	background-image:url(././images/spellBoxBackground.png);
+	left:420px;
+	display:inline;
+}
+
+#guildBox{
+	padding:3px;
+	position:absolute;
+	margin-top:3px;
+	width:169px;
+	height:315px;
+	background-image:url(././images/spellBoxBackground.png);
+	left:420px;
+}
+
+#guildIconSpace{
+	width:30px;
+	height:30px;
+	float:left;
+	position:absolute;
+}
+
+#guildNameSpace{
+	height:30px;
+	width:115px;
+	float:right;
+	
+}
+
+.guilds{
+	margin:5px;
+	width:151px;
+	height:30px;
+	font-size:11px;
+	border:outset;
+	padding:2px;
+}
+
+.yes:hover{
+	background: rgba(255,255,255,0.3);
+}
+
+.selected{
+	background: rgba(255,255,255,0.3);
+	border:inset;
+}
+
+#gsName{
+	width:150px;
+	height:25px;
+	font-size:14px;
+	border:inset;
+	padding-top:10px;
+}
+#gsTitle{
+	width:150px;
+	height:25px;
+	font-size:12px;
+	border:inset;
+	padding-top:10px;
+}
+#gsRep0{
+	width:150px;
+	height:25px;
+	font-size:12px;
+	border:inset;
+	padding-top:10px;
+}
+#gsRep1{
+	width:150px;
+	height:25px;
+	font-size:12px;
+	border:inset;
+	padding-top:10px;
+}
+#gsRep2{
+	width:150px;
+	height:25px;
+	font-size:12px;
+	border:inset;
+	padding-top:10px;
+}
+
+.helpers{
+	padding-top:5px;
+	padding-right:5px;
+	margin-left:3px;
+}
+
+#helperIconSpace {
+	background-size:cover;
+	float:left;
+	width:35px;
+	height:35px;
+	margin-top:2.5px;
+	margin-left:2px;
+}
+#helperInformation {
+	height:35px;
+	border:outset;
+	background:rgba(0,0,0,0.3)
+}
+#helperNameSpace {
+	display:inline;
+	width:50px;
+	height:20px;
+	float:left;
+	font-size:12px;
+}
+#helperLvlSpace {
+	float:right;
+	height:20px;
+	font-size:10px;
+	margin-right:2px;
+}
+#helperCostSpace {
+	height:10px;
+	font-size:10px;
+	margin-top:20px;
+	margin-left:37px;
+	position:absolute;
+}
+#helperProdSpace {
+	height:10px;
+	font-size:11px;
+	margin-top:19px;
+	float:right;
+	margin-right:-25px;
+}
+
+#guildTitleSpace{
+	top:-16px;
+	position:relative;
+	float:left;
+	left:45px;
+}
+
+#guildRepSpace{
+	float:right;
+	position:relative;
+	top:-16px;
+	margin-right:5px;
+}
+
+.feat{
+	width:50px;
+	height:50px;
+	z-index:15;
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+	margin-bottom:4px;
+}
+
+#featsBox{
+	z-index:10;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#unlockedFeatsWrapper{
+	width:270px;
+	max-height:323px;
+	margin-right:-5px;
+}
+
+#featsBoxTitle{
+	background-color:darkgrey;
+	border-style:outset;
+	margin:3px;
+	font-size:15px;
+	height:20px;
+	width:238px;
+}
+
+#unlockedFeatBox{
+	position:absolute;
+	z-index:25;
+	width:250px;
+	min-height:80px;
+	left:172px;
+	background-size:100% 100%;
+	opacity:0;
+	
+	background-image:url(././images/unlockedFeatBox.png);
+}
+
+#featTitle{
+	margin-top:5px;
+}
+
+#unlockedFeatDescription{
+	margin:5px;
+	font-size:12px;
+}
+
+#tokenIconSpace{
+	width:15px;
+	height:15px;
+	display:inline;
+	float:left;
+	z-index:15;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#questBox{
+	padding:3px;
+	position:absolute;
+	margin-top:3px;
+	width:169px;
+	height:315px;
+	background-image:url(././images/spellBoxBackground.png);
+	left:420px;
+}
+
+#guildReward{
+	position:relative;
+	width:25px;
+	height:25px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	z-index:5;
+	display:inline-block;
+	border:inset;
+}
+
+#guildTokenReward{
+	position:relative;
+	width:25px;
+	height:13px;
+	z-index:15;
+	display:inline-block;
+	border:groove;
+	left:-1px;
+	top:-6px;
+	font-size:10px;
+}
+
+#questName{
+	border:ridge;
+	background-color:rgba(255,255,255,0.3);
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#fullQuestTimer{
+	position:relative;
+	width:155px;
+	height:25px;
+	margin:4px;
+	border: ridge silver;
+}
+
+#currentQuestTimer{
+	max-width:155px;
+	height:25px;
+	position:absolute;
+	background:rgba(200,200,200,0.6);
+	z-index:25;
+}
+
+#fullExpeditionTimer{
+	position:relative;
+	width:155px;
+	height:25px;
+	margin:4px;
+	border: ridge silver;
+}
+
+#currentExpeditionTimer{
+	max-width:155px;
+	height:25px;
+	position:absolute;
+	background:rgba(200,200,200,0.6);
+	z-index:25;
+}
+
+#expeditionProgressNumbers{
+	position:absolute;
+	width:155px;
+	height:30px;
+	z-index:11;
+	margin-top:7px;
+	font-size:12px;
+	background:rgba(200,200,200,0)
+}
+
+#startQuestButton{
+	width:100px;
+	height:25px;
+	border:outset;
+	background:rgba(255, 255, 255, 0.3);
+	margin-left:30px;
+	padding:5px;
+}
+
+#startQuestButton:hover{
+	border:inset;
+}
+
+#startExpeditionButton{
+	width:100px;
+	height:auto;
+	border:outset;
+	background:rgba(255, 255, 255, 0.3);
+	margin-left:30px;
+	padding:5px;
+	font-size:13px;
+}
+
+#startExpeditionButton:hover{
+	border:inset;
+}
+
+#progressNumbers{
+	position:absolute;
+	width:155px;
+	height:30px;
+	z-index:11;
+	margin-top:7px;
+	font-size:12px;
+	background:rgba(200,200,200,0)
+}
+
+#lastQuestRewards{
+	width:155px;
+	height:85px;
+	background-color: rgba(0,0,0,0.3);
+	position:absolute;
+	top:220px;
+	left:7px;
+	border:inset;
+}
+
+#prevQuest{
+	border:ridge;
+	background-color:rgba(255,255,255,0.3);
+	margin-bottom:5px;
+}
+
+.no{
+	background-color:rgba(0,0,0,0.4);
+}
+
+.quests{
+	margin:5px;
+	width:151px;
+	height:30px;
+	font-size:11px;
+	border:outset;
+	padding:2px;
+}
+
+#questGuildIconSpace{
+	width:30px;
+	height:30px;
+	float:left;
+	position:absolute;
+}
+
+#questGuildNameSpace{
+	height:30px;
+	width:115px;
+	float:right;
+	
+}
+
+#questGuildTitleSpace{
+	top:16px;
+	position:relative;
+	float:left;
+	left:45px;
+}
+
+#questGuildRepSpace{
+	float:right;
+	position:relative;
+	top:-16px;
+	margin-right:5px;
+}
+
+#questTokenIconSpace{
+	width:15px;
+	height:15px;
+	display:inline;
+	float:left;
+	z-index:15;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#questContent{
+	margin-top:6px;
+}
+
+#expeditionTokenReward{
+	position:relative;
+	width:25px;
+	height:13px;
+	z-index:5;
+	display:inline-block;
+	border:groove;
+	left:5px;
+	top:-12px;
+	font-size:10px;
+}
+
+.gear{
+	height:40px;
+	width:235px;
+	border:outset;
+	margin:5px;
+}
+
+#gearBoxTitle{
+	background-color:darkgrey;
+	border-style:outset;
+	margin:3px;
+	font-size:15px;
+	height:20px;
+	width:238px;
+}
+
+.gearIcon{
+	width:33px;
+	height:33px;
+	border:inset;
+	background-color:grey;
+}
+
+.gearInfo{
+	width:180px;
+	height:30px;
+	border:inset;
+	background-color:grey;
+	display:inline-block;
+	position:relative;
+	top:-37px;
+	left:20px;
+}
+
+.gearEquip{
+	font-size:14px;
+	margin:5px;
+	border:ridge;
+	position:relative;
+	left:2px;
+}
+
+.gearEquip:hover{
+	background:rgba(255, 255, 255, 0.3);
+}
+
+#expeditionRewardIcon{
+	width:35px;
+	height:35px;
+	display:inline-block;
+	position:relative;
+	top:5px;
+	margin-bottom:10px;
+}
+
+#expeditionRewardInfo{
+	display:inline-block;
+	width:120px;
+	position:relative;
+	top:-20px;
+	text-align:left;
+	left:5px;
+	font-size:10px;
+}
+
+#claimRewardButton{
+	width:80%;
+	height:auto;
+	border:outset;
+	background:rgba(255, 255, 255, 0.3);
+	left:15px;
+	position:relative;
+	font-size: 12px;
+	margin-bottom:10px;
+}
+
+#claimRewardButton:hover{
+	border:inset;
+}
+
+#setTitle{
+	background-color:darkgrey;
+	border-style:outset;
+	position:relative;
+	width:80%;
+	left:23px;
+	font-size:20px;
+	top:5px;
+}
+
+#setInfo{
+	width:75%;
+	position:relative;
+	left:29px;
+	border-bottom:ridge;
+	border-left:ridge;
+	border-right:ridge;
+	height:20px;
+	font-size:14px;
+	top:5px;
+}
+
+.inSegments{
+	margin-top:6px;
+	height:35px;
+	border:ridge;
+	width:160px;
+	margin-left:2px;
+}
+
+#inName{
+	display:inline-block;
+	position:relative;
+	font-size:11px;
+	float:left;
+	width:95px;
+}
+
+#inIcon{
+	width:30px;
+	height:30px;
+	float:left;
+	position:relative;
+	top:3px;
+}
+#inNumber{
+	font-size:10px;
+}
+
+#inCost{
+	font-size:10px;
+	position:relative;
+	left:40px;
+	top:-13px;
+	width:55px;
+	text-align:left;
+}
+
+#inBonus{
+	font-size:10px;
+	position:relative;
+	top:1px;
+	width:15px;
+	float:right;
+	left:-10px;
+	display:inline;
+}
+
+.investButton{
+	position: relative;
+	font-size: 10px;
+	border: outset;
+	width: 35px;
+	left: 115px;
+	top: -27px;
+	background: rgba(0,0,0,0.2);
+}
+
+.investButton:hover{
+	border:inset;
+}
+
+#levelSegment{
+	display: inline-block;
+	position:relative;
+	top:5px;
+	left:190px;
+}
+
+#levelBar{
+	width:150px;
+	height:15px;
+	display:inline-block;
+	border:ridge;
+	font-size:10px;
+	padding-top:3px;
+	top:-2px;
+	position:relative;
+}
+
+#levelNumber{
+	display:inline-block;
+	top:-2px;
+	position:relative;
+	font-size:12px;
+}
+
+#level{
+	top:-2px;
+	position:relative;
+	font-size:12px;
+	display:inline-block;
+}
+
+#currentXp{
+	position:relative;
+	display:inline-block;
+	z-index:5;
+}
+#levelXp{
+	position:relative;
+	display:inline-block;
+	z-index:5;
+}
+
+#currentXpLayer{
+	max-width:150px;
+	height:20px;
+	position:absolute;
+	background:rgba(255,255,255,0.5);
+	top:-1px;
+	left:-1px;
+	z-index:2;
+}
+
+.talentBoxTitle{
+	background-color:darkgrey;
+	border-style:outset;
+	top:3px;
+	left:3px;
+	position:relative;
+	width:238px;
+}
+
+.talents{
+	border:inset;
+	position:relative;
+	display:inline-block;
+	width:50px;
+	height:50px;
+	margin-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+}
+
+.talentBg{
+	width:243px;
+	position:relative;
+	height:109px;
+	top:3px;
+	left:3px;
+}
+
+.talentBought{
+	width:25px;
+	font-size:10px;
+	position:absolute;
+	display:inline-block;
+	top:77px;
+	border:inset;
+	margin-left:-53px;
+}
+
+.alerted{
+	background-image:url(././images/questTabAlerted.png) !important;
+}
+
+.featsAlerted{
+	background-image:url(././images/FeatsIconAlerted.png) !important;
+}
+
+.alert{
+	background-image:url(././images/alertIcon.png);
+	width:18px;
+	height:18px;
+	position:fixed;
+}
+
+.autocastIcon{
+	background-image:url(././images/autocastIcon.png);
+	position:fixed;
+	width:15px;
+	height:15px;
+	font-size:10px;
+	left:570px;
+	color:white;
+	text-align:center;
+}
+
+#armour{background-image:url(././images/armourEmptyIcon.png); object-fit: contain;}
+#weapon{background-image:url(././images/weaponEmptyIcon.png); object-fit: contain;}
+#ring{background-image:url(././images/ringEmptyIcon.png); object-fit: contain;}
+#cloak{background-image:url(././images/cloakEmptyIcon.png); object-fit: contain;}
+#aura	{background-image:url(././images/auraEmptyIcon.png); object-fit: contain;}
+
+#voidPower{
+	background-image:url(././images/voidPowerIcon.png); 
+	object-fit: contain;
+	background-repeat:no-repeat;
+	width:25px;
+	height:25px;
+	display:inline-block;
+	position:absolute;
+	left:310px;
+	top:2px;
+}
+
+#power{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	position:absolute;
+	left:340px;
+	top:5px;
+}
+
+#voidPortal{
+	height:200px;
+	width:200px;
+	position:absolute;
+	top:85px;
+	left:100px;
+	background-image:url(././images/voidPortal.png);
+}
+
+#voidPortal:hover{
+	background-image:url(././images/voidPortalHover.png);
+}
+
+.deedsBoxTitle{
+	width:238px;
+	margin-top:3px;
+	background-color:darkgrey;
+	border-style:outset;
+	display:inline-block;
+}
+
+.deed{
+	width:50px;
+	height:50px;
+	margin: 2px 5px 2px 5px;
+	display:inline-block;
+	font-size:10px;
+	float:left;
+	z-index:5;
+	position:relative;
+	left:4px;
+}
+
+.tick{
+	background-image:url(././images/tick.png);
+	width:20px;
+	height:20px;
+	position:absolute;
+	z-index:10;
+}

@@ -1,0 +1,46 @@
+helperIds = ["farmer", "soldier", "scout", "cleric", "cavalier", "wyrm"];
+helperNames = ["Farmer", "Soldier", "Scout", "Cleric", "Cavalier", "Wyrm"];
+helperIcons = ["././images/testHelper.png", "././images/testHelper.png", "././images/testHelper.png", "././images/testHelper.png", "././images/testHelper.png", "././images/testHelper.png"];
+helperCosts = [100, 250, 500,1000,2000,5000];
+helperLevels = [1,1,1,1,1,1];
+helperBaseProds = [1,2,4,6,8,15];
+helperBaseCosts = [100,250,500,1000,2000,5000]; 
+helperProds = [1,2,4,6,8,15];
+helperTypes = ["unlocked", "locked","locked", "locked","locked", "locked"];
+
+          i.cost i.prod ratio
+farmer   |  100 |  1   | 0.01|     |
+soldier  |  250 |  3   |0.012|0.002
+scout    |  400 |  6   |0.015|0.003
+cleric   |  800 |  15  |.0187|0.0037
+cavalier | 1480 |  34  |.0229|0.0043     0.022972
+wyrm     | 5000 |  84  |0.028|0.0051
+
+
+helperBaseCosts = [100,250,400,800,1480,5000]
+helperBaseProds = [1,3,6,15,34,84]
+
+
+         far sol sco cle cav wyr
+farmer  | / |2.5| 5 | 10| 20| 50|
+soldier |0.4| / | 2 | 4 | 8 | 20|
+scout   |0.2|0.5| / | 2 | 4 | 10|
+cleric  |0.1| 4 |0.5| / |0.5|0.2|
+cavalier|.05| 8 |   |   | / |   |
+wyrm    |.02| 20|   |   |   | / |
+
+
+         far sol sco cle cav wyr
+farmer  | / |   |   |   |   |   |
+soldier |   | / |   |   |   |   |
+scout   |   |   | / |   |   |   |
+cleric  |   |   |   | / |   |   |
+cavalier|   |   |   |   | / |   |
+wyrm    |   |   |   |   |   | / |
+
+farmer  
+soldier 
+scout  
+cleric   
+cavalier 
+wyrm

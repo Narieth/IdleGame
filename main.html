@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css">
+	
+	<script src="functions.js"></script>
+	<script src="database.js"></script>
+	<script src="myscript.js"></script> 
+	<script src="reset.js"></script>
+</head>
+<html>
+	<body>
+		<div id="outerBox">
+			<div id="mouseoverDiv" class="hidden"></div>
+			<div id="popupBox" class="hidden"></div>
+			<div id="topSlip">
+				<div id="moneyCount"><div id="gold">0</div></div>
+				<div id="clickDamage"><div id="damage"></div></div>
+				<div id="helperProduction" class="hidden"><div id="production"></div></div>
+				<div id="voidPower" class="hidden"></div><div id="power"></div>
+				<div id="levelSegment">
+					<div id="level">Level: </div>
+					<div id="levelNumber"></div>
+					<div id="levelBar"></div>
+				</div>
+			</div>
+			<div id="spellBox" class="hidden"><div class="boxTitle">Spells</div><div id="resourceRegen"><div id="currentMana"><div id="manaNumbers"></div></div></div><div id="spells"></div><div id="autocastIcons"></div></div>
+			<div id="helperBox" class="hidden"><div class="boxTitle">Mercenary</div><div id="mercContent"></div></div>	
+			<div id="guildBox" class="hidden"><div class="boxTitle">Guilds</div><div id="guildContent"></div></div>	
+			<div id="questBox" class="hidden"><div class="boxTitle">Quests</div><div id="questContent"></div><div id="fullQuestTimer"><div id="currentQuestTimer"><div id="progressNumbers"></div></div></div><div id="fullExpeditionTimer" class="hidden"><div id="currentExpeditionTimer" class="hidden"><div id="expeditionProgressNumbers" class="hidden"></div></div></div><div id="startQuestButton">Start Quest</div><div id="startExpeditionButton" class="hidden"  onclick="expeditionButtonClick(this.id)" onmouseover="expeditionButtonMouseover(this.id)" onmouseout="mouseoutFunction(this.id)">Start Expedition</div><div id="lastQuestRewards"></div></div>
+			<div id="bottomColumn">
+					<div id="spellTab" class="tab hidden" onclick="tabClick(this.id)"></div>
+					<div id="helperTab" class="tab hidden" onclick="tabClick(this.id)"></div>
+					<div id="guildTab" class="tab hidden" onclick="tabClick(this.id)"></div>
+					<div id="questTab" class="tab hidden" onclick="tabClick(this.id)"></div>
+				</div>
+			<div id="leftColumn">
+				<div id="upgrades" class="hoverable" onClick="hoverableClick(this.id)"></div>
+				<div id="feats" class="hoverable" onClick="hoverableClick(this.id)"></div>
+				<div id="deeds" class="hoverable hidden" onClick="hoverableClick(this.id)"></div>
+				<div id="stats" class="hoverable hidden" onClick="hoverableClick(this.id)"></div>
+				<div id="talents" class="hoverable hidden" onClick="hoverableClick(this.id)"></div>
+			</div>
+			<script></script>
+			<div id="upgradesBox" class="hidden theBoxes"></div>
+			<div id="deedsBox" class="hidden theBoxes"></div>
+			<div id="featsBox" class="hidden theBoxes"></div>
+			<div id="statsBox" class="hidden theBoxes">
+				<div id="gearBoxTitle">Equipment</div>
+				<div id="armourSegment" class="gear" onclick="gearIconClick(this.id)"><div id="armour" class="gearIcon"></div><div id="armourInfo" class="gearInfo"></div></div>
+				<div id="weaponSegment" class="gear" onclick="gearIconClick(this.id)"><div id="weapon" class="gearIcon"></div><div id="weaponInfo" class="gearInfo"></div></div>
+				<div id="ringSegment" class="gear" onclick="gearIconClick(this.id)"><div id="ring" class="gearIcon"></div><div id="ringInfo" class="gearInfo"></div></div>
+				<div id="cloakSegment" class="gear" onclick="gearIconClick(this.id)"><div id="cloak" class="gearIcon"></div><div id="cloakInfo" class="gearInfo"></div></div>
+				<div id="auraSegment" class="gear" onclick="gearIconClick(this.id)"><div id="aura" class="gearIcon"></div><div id="auraInfo" class="gearInfo"></div></div>
+				<div id="setSegment" class="setBox hidden"><div id="setTitle"></div><div id="setInfo"></div></div>
+			</div>
+			<div id="talentsBox" class="hidden theBoxes">Talents</div>
+			<div id="clickMe" onclick="clickFunction()"></div>
+			<div id="voidPortal" onclick="voidClick()" onmouseover="voidMouseover()" onmouseout="mouseoutFunction()" class="hidden"></div>
+			<div id="unlockedFeatBox" class="hidden"></div>
+		</div>
+	</body>
+</html>
